@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>FabForm.io — Form Backend for Static Sites, Astro & Modern Web Builders</title>
+
+  <!-- Canonical: Push SEO authority to FabForm.io -->
+  <link rel="canonical" href="https://fabform.io" />
+
+  <!-- Meta Description -->
+  <meta name="description" content="Deep dive into static websites, Astro, JAMStack, and why a dedicated form backend like FabForm.io is essential for modern, fast, secure, and scalable form handling.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="FabForm.io — Form Backend for Static Sites & Astro" />
+  <meta property="og:description" content="Learn why static sites and Astro need a powerful form backend like FabForm.io for secure, reliable, and flexible form handling." />
+  <meta property="og:url" content="https://fabform.io" />
+  <meta property="og:type" content="website" />
+
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-950 text-slate-100 antialiased">
+
+  <!-- Gradient Hero Background -->
+  <div class="relative overflow-hidden">
+    <div class="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,_#22d3ee33,_transparent_60%),radial-gradient(circle_at_bottom,_#6366f133,_transparent_60%)]"></div>
+
+    <!-- Header -->
+    <header class="relative z-10 border-b border-white/10 bg-slate-950/70 backdrop-blur">
+      <div class="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-2">
+          <div class="h-8 w-8 rounded-xl bg-gradient-to-tr from-cyan-400 to-blue-500 flex items-center justify-center text-xs font-bold">
+            FF
+          </div>
+          <span class="text-lg font-semibold tracking-tight">FabForm.io</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-slate-200/80">
+          <a href="#static-sites" class="hover:text-cyan-300 transition">Static Sites</a>
+          <a href="#astro" class="hover:text-cyan-300 transition">Astro</a>
+          <a href="#why-backend" class="hover:text-cyan-300 transition">Why Form Backend</a>
+          <a href="#telegram" class="hover:text-cyan-300 transition">Telegram Alerts</a>
+          <a href="#faq" class="hover:text-cyan-300 transition">FAQ</a>
+        </nav>
+        <a href="https://fabform.io" class="inline-flex items-center gap-2 rounded-full bg-cyan-400 px-4 py-2 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/40 hover:bg-cyan-300 transition">
+          Go to FabForm.io
+          <span class="text-xs">↗</span>
+        </a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 max-w-6xl mx-auto px-6 pt-16 pb-20 md:pt-24 md:pb-28">
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 rounded-full border border-cyan-400/40 bg-slate-900/60 px-3 py-1 text-xs font-medium text-cyan-200 mb-4">
+            Static sites • Astro • JAMStack • Telegram alerts
+          </p>
+          <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-slate-50">
+            Why Static Sites Still Need a Serious
+            <span class="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+              Form Backend
+            </span>
+          </h1>
+          <p class="mt-5 text-base md:text-lg text-slate-200/80 leading-relaxed">
+            Static websites and modern builders like Astro, Next.js, and Hugo give you speed, security, and simplicity.
+            But the moment you need a contact form, signup form, or lead capture, you hit the same wall:
+            <span class="font-semibold text-slate-50">“Where do the submissions go?”</span>
+            This is where a dedicated form backend like
+            <a href="https://fabform.io" class="text-cyan-300 underline decoration-cyan-500/60 underline-offset-2 hover:text-cyan-200">FabForm.io</a>
+            becomes essential.
+          </p>
+          <div class="mt-8 flex flex-wrap gap-4">
+            <a href="https://fabform.io" class="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/40 hover:bg-cyan-300 transition">
+              Start with FabForm.io
+            </a>
+            <a href="#why-backend" class="inline-flex items-center justify-center rounded-full border border-slate-600 px-6 py-3 text-sm font-semibold text-slate-100 hover:border-cyan-400/70 hover:text-cyan-200 transition">
+              Why a form backend matters
+            </a>
+          </div>
+          <p class="mt-4 text-xs text-slate-400 max-w-md">
+            This page is a deep dive into static websites, Astro, and the role of a form backend.
+            All SEO authority is intentionally directed to
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>.
+          </p>
+        </div>
+
+        <div class="relative">
+          <div class="absolute -inset-6 bg-gradient-to-tr from-cyan-500/20 via-blue-500/10 to-transparent blur-3xl"></div>
+          <div class="relative rounded-2xl border border-white/10 bg-slate-900/70 p-6 shadow-2xl shadow-cyan-500/20">
+            <div class="flex items-center justify-between mb-4">
+              <span class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300">Example form</span>
+              <span class="text-[10px] text-slate-400">Static HTML • Astro • Next.js</span>
+            </div>
+            <pre class="text-xs md:text-[11px] leading-relaxed bg-slate-950/80 rounded-xl p-4 border border-slate-800 overflow-x-auto">
+&lt;form action="https://fabform.io/f/your-form-id" method="POST"&gt;
+  &lt;input type="text" name="name" required
+         class="block w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 mb-3"&gt;
+
+  &lt;input type="email" name="email" required
+         class="block w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 mb-3"&gt;
+
+  &lt;textarea name="message"
+            class="block w-full rounded-md border border-slate-700 bg-slate-900 px-3 py-2 text-sm text-slate-100 mb-3"&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"
+          class="inline-flex items-center rounded-md bg-cyan-400 px-4 py-2 text-xs font-semibold text-slate-950"&gt;
+    Send message
+  &lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+            <p class="mt-4 text-xs text-slate-300">
+              This same form works in Astro components, static HTML, Next.js pages, Hugo templates, Jekyll layouts,
+              and more — because
+              <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+              handles the backend for you.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- Section: What is a Static Website -->
+  <section id="static-sites" class="border-t border-white/5 bg-slate-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-3 gap-10 items-start">
+        <div class="md:col-span-1">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+            Static Websites:
+            <span class="text-cyan-300">Fast, Predictable, and Surprisingly Powerful</span>
+          </h2>
+          <p class="mt-4 text-sm text-slate-300/80">
+            Static sites are not a step backwards. They are a deliberate choice:
+            fewer moving parts, fewer vulnerabilities, and dramatically better performance.
+          </p>
+        </div>
+        <div class="md:col-span-2 space-y-6 text-sm md:text-base text-slate-200/90 leading-relaxed">
+          <p>
+            A static website is, at its core, a collection of pre‑rendered HTML, CSS, and JavaScript files served
+            directly from a CDN or simple web server. There is no application server assembling pages on the fly,
+            no database queries per request, and no runtime logic that needs to execute before a visitor sees content.
+            The result is a site that feels instant, resilient, and easy to host almost anywhere.
+          </p>
+          <p>
+            Historically, static sites were associated with simple brochure pages or documentation. But the ecosystem
+            has evolved. With modern static site generators and frameworks, you can build complex marketing sites,
+            documentation hubs, blogs, product pages, and even full‑blown applications that still deploy as static assets.
+            The “static” part refers to the deployment model, not the ambition of the project.
+          </p>
+          <p>
+            The benefits are compelling: performance, security, and scalability. A static site can be cached at the edge
+            around the world. It has a tiny attack surface because there is no server‑side code to exploit. Scaling is
+            often as simple as letting your CDN handle more traffic. For many teams, this is the ideal foundation for
+            a modern web presence.
+          </p>
+          <p>
+            However, the moment you need to collect data from users — contact forms, waitlists, beta signups, event
+            registrations, feedback, or support requests — you encounter a fundamental limitation: static sites do not
+            have a built‑in way to process and store form submissions. That’s not a flaw; it’s simply outside their scope.
+            This is where a dedicated form backend like
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            becomes a natural companion.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Static Site Builders & Astro -->
+  <section id="astro" class="border-t border-white/5 bg-gradient-to-b from-slate-950 to-slate-900 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="flex flex-col md:flex-row md:items-start md:justify-between gap-10">
+        <div class="md:w-1/2">
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+            Static Site Builders & Astro:
+            <span class="text-cyan-300">The New Generation of Frontend Tools</span>
+          </h2>
+          <p class="mt-4 text-sm text-slate-300/80">
+            Tools like Astro, Next.js, Hugo, Jekyll, and Eleventy changed how we think about “static”.
+            They let you write modern components while still shipping lean, pre‑rendered pages.
+          </p>
+
+          <div class="mt-8 grid grid-cols-2 gap-4 text-xs text-slate-200/90">
+            <div class="rounded-xl border border-white/10 bg-slate-900/70 p-4">
+              <p class="text-[11px] font-semibold text-cyan-300 uppercase tracking-[0.18em] mb-2">Component‑driven</p>
+              <p>
+                Astro, Next.js, and similar tools let you build with components, slots, and layouts, then compile
+                everything down to static HTML where possible. You get the ergonomics of modern frameworks without
+                paying the runtime cost on every page.
+              </p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-slate-900/70 p-4">
+              <p class="text-[11px] font-semibold text-cyan-300 uppercase tracking-[0.18em] mb-2">Partial hydration</p>
+              <p>
+                Astro popularised the idea of shipping zero JavaScript by default and hydrating only the interactive
+                islands that need it. This keeps pages fast while still allowing rich UI where it matters.
+              </p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-slate-900/70 p-4">
+              <p class="text-[11px] font-semibold text-cyan-300 uppercase tracking-[0.18em] mb-2">Content‑first</p>
+              <p>
+                Static builders excel at content‑heavy sites: blogs, docs, marketing pages, and knowledge bases.
+                They integrate with Markdown, MDX, CMSs, and headless APIs while still outputting static files.
+              </p>
+            </div>
+            <div class="rounded-xl border border-white/10 bg-slate-900/70 p-4">
+              <p class="text-[11px] font-semibold text-cyan-300 uppercase tracking-[0.18em] mb-2">Deploy anywhere</p>
+              <p>
+                Because the output is static, you can deploy to almost any platform: CDNs, object storage, static hosts,
+                or custom infrastructure. This flexibility is a huge advantage for teams of all sizes.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="md:w-1/2 space-y-6 text-sm md:text-base text-slate-200/90 leading-relaxed">
+          <p>
+            Astro in particular has become a favourite for developers who want to combine the best parts of multiple
+            ecosystems. You can bring React, Vue, Svelte, Solid, and plain HTML components into a single project,
+            while still shipping a static site by default. This makes Astro ideal for marketing sites that need
+            interactive components without turning into full single‑page applications.
+          </p>
+          <p>
+            Yet, even with all this sophistication on the frontend, the question of handling form submissions remains.
+            Astro does not ship with a built‑in database or form processing engine. That’s by design: it keeps the
+            framework focused on rendering, not on becoming a full backend platform. The same is true for Hugo, Jekyll,
+            Eleventy, and many other static site builders.
+          </p>
+          <p>
+            When you add a contact form to an Astro page, the HTML is straightforward. But what happens when a visitor
+            clicks “Submit”? Without a backend, the form has nowhere to send the data. You could spin up a custom API,
+            maintain a serverless function, or wire up a database — but that adds complexity, cost, and operational
+            overhead that undermines the simplicity of your static stack.
+          </p>
+          <p>
+            A dedicated form backend like
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            solves this elegantly. It gives you a stable, secure endpoint that you can use from any static site builder.
+            Your Astro form becomes a simple HTML form that posts to FabForm.io, and the platform takes care of storage,
+            notifications, spam filtering, and integrations.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Why a Form Backend is Needed -->
+  <section id="why-backend" class="border-t border-white/5 bg-slate-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+          Why Static Sites Need a Dedicated
+          <span class="text-cyan-300">Form Backend</span>
+        </h2>
+        <p class="mt-4 text-sm text-slate-300/80">
+          Forms are deceptively simple. A few fields, a button, and a thank‑you message. But behind that simplicity
+          lies a long list of responsibilities that static sites are not designed to handle on their own.
+        </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-8 text-sm md:text-base text-slate-200/90 leading-relaxed">
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Data storage & reliability</h3>
+          <p>
+            When someone submits a form, you need to store that data somewhere durable. Email alone is not enough:
+            messages can be lost, filtered, or misrouted. A form backend like
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            provides a central, queryable store for all submissions, with export options and a dashboard for review.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Security & spam protection</h3>
+          <p>
+            Public forms attract spam and abuse. Handling this yourself means implementing validation, rate limiting,
+            bot detection, and possibly CAPTCHAs. A dedicated backend can centralise these protections, so every form
+            on every static site you build benefits from the same hardened infrastructure.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Notifications & workflows</h3>
+          <p>
+            A form is only useful if someone sees the submission. Teams often need email alerts, Slack messages,
+            Telegram notifications, or webhook triggers to kick off workflows. A platform like
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            turns each submission into an event you can route anywhere.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-sm md:text-base text-slate-200/90 leading-relaxed">
+          <p>
+            Without a form backend, teams often resort to ad‑hoc solutions: custom serverless functions, hastily
+            configured APIs, or third‑party scripts that are hard to audit. These approaches can work, but they
+            introduce new failure modes and maintenance burdens. Every custom endpoint becomes another piece of
+            infrastructure to monitor, secure, and update.
+          </p>
+          <p>
+            A dedicated form backend centralises this responsibility. Instead of scattering form logic across multiple
+            projects, you point all your forms — from Astro sites, static landing pages, documentation hubs, and
+            microsites — to a single, well‑maintained service. This consistency is especially valuable for agencies,
+            product teams, and solo developers managing many sites.
+          </p>
+          <p>
+            With
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>,
+            you gain a stable API surface for forms. The HTML on your static site stays simple, while the backend can
+            evolve: new integrations, better spam filtering, richer analytics, and improved notifications can all be
+            added without touching your deployed pages.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300 mb-3">From static form to full workflow</p>
+          <ol class="space-y-3 text-sm text-slate-200/90 list-decimal list-inside">
+            <li>
+              A visitor fills out a form on your Astro or static site and clicks “Submit”.
+            </li>
+            <li>
+              The form posts to a FabForm.io endpoint, defined in the <code class="text-cyan-300">action</code> attribute.
+            </li>
+            <li>
+              FabForm.io validates the submission, filters spam, and stores the data securely.
+            </li>
+            <li>
+              Notifications are sent: email, Slack, Telegram, or custom webhooks, depending on your configuration.
+            </li>
+            <li>
+              Your team reviews submissions in the FabForm.io dashboard, exports data, or connects it to other tools.
+            </li>
+          </ol>
+          <p class="mt-4 text-xs text-slate-400">
+            The static site remains static. The dynamic behaviour lives in
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>,
+            where it can be monitored and improved over time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Telegram Notifications -->
+  <section id="telegram" class="border-t border-white/5 bg-gradient-to-b from-slate-900 to-slate-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="grid md:grid-cols-2 gap-10 items-start">
+        <div>
+          <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+            Telegram Notifications:
+            <span class="text-cyan-300">Form Submissions You Actually See</span>
+          </h2>
+          <p class="mt-4 text-sm text-slate-300/80">
+            Email is useful, but it’s easy for important messages to get buried. For many teams, real‑time messaging
+            is where work actually happens. That’s why having form submissions arrive directly in Telegram can be a
+            game‑changer.
+          </p>
+          <p class="mt-4 text-sm md:text-base text-slate-200/90 leading-relaxed">
+            With
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>,
+            you can configure your forms so that every new submission triggers a Telegram message. This is ideal for
+            time‑sensitive leads, support requests, or internal tools where quick responses matter. Instead of polling
+            a dashboard or digging through email, your team sees new submissions in the same place they already
+            coordinate work.
+          </p>
+          <ul class="mt-6 space-y-2 text-sm text-slate-200/90">
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+              <span><span class="font-semibold">Instant alerts:</span> new submissions appear in Telegram within seconds.</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+              <span><span class="font-semibold">Mobile‑first:</span> perfect for teams on the move, founders, and on‑call staff.</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+              <span><span class="font-semibold">Channel or direct:</span> send alerts to a team channel or a private chat.</span>
+            </li>
+            <li class="flex gap-2">
+              <span class="mt-1 h-1.5 w-1.5 rounded-full bg-cyan-400"></span>
+              <span><span class="font-semibold">Structured payloads:</span> see key fields at a glance, not just a raw blob of text.</span>
+            </li>
+          </ul>
+          <p class="mt-6 text-sm text-slate-300/90">
+            The static site doesn’t need to know anything about Telegram. It simply posts to
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>,
+            and the platform handles the rest.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300 mb-3">Example flow</p>
+          <div class="space-y-4 text-sm text-slate-200/90 leading-relaxed">
+            <p>
+              Imagine you run a small product studio with a marketing site built in Astro. You have a “Work with us”
+              form that potential clients use to describe their project. These leads are valuable, and response time
+              matters. You don’t want them sitting unnoticed in an inbox.
+            </p>
+            <p>
+              You configure the form to submit to a FabForm.io endpoint. In the FabForm.io dashboard, you connect
+              that form to a Telegram channel where your core team hangs out. Now, whenever someone fills out the
+              form, a structured message appears in Telegram with their name, email, budget, and project description.
+            </p>
+            <p>
+              One teammate can reply in Telegram, another can jump into the FabForm.io dashboard to review the full
+              submission history, and a third can export data for reporting. The static site remains unchanged, but
+              your workflow becomes dramatically more responsive.
+            </p>
+            <p class="text-xs text-slate-400">
+              All of this is powered by
+              <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>,
+              not by custom backend code in your Astro project.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: Using FabForm.io with Static Builders -->
+  <section class="border-t border-white/5 bg-slate-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+          Using FabForm.io with Astro, Hugo, Jekyll, and Other Static Builders
+        </h2>
+        <p class="mt-4 text-sm text-slate-300/80">
+          One of the strengths of a form backend is that it doesn’t care how your HTML was generated.
+          Whether you hand‑coded a page or used a sophisticated static site generator, the integration
+          pattern is the same.
+        </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-2 gap-10 items-start">
+        <div class="space-y-5 text-sm md:text-base text-slate-200/90 leading-relaxed">
+          <p>
+            In Astro, you might define a form inside an <code class="text-cyan-300">.astro</code> component. In Hugo,
+            the form might live in a partial template. In Jekyll, it could be part of a layout or an include.
+            Regardless of the tool, the key is the <code class="text-cyan-300">action</code> attribute on the
+            <code class="text-cyan-300">&lt;form&gt;</code> element. That’s where you point to your FabForm.io endpoint.
+          </p>
+          <p>
+            This decoupling is powerful. You can redesign your site, switch static site generators, or migrate hosting
+            providers without changing how form submissions are handled. As long as the form posts to the same
+            FabForm.io endpoint, your data and workflows remain intact.
+          </p>
+          <p>
+            For teams managing multiple sites — perhaps a main marketing site in Astro, a documentation site in Hugo,
+            and a blog in Jekyll — this consistency is invaluable. You don’t need three different backend solutions
+            for three different stacks. You can standardise on
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            and keep your frontend choices flexible.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-6">
+          <p class="text-xs font-semibold uppercase tracking-[0.2em] text-cyan-300 mb-3">Generic integration pattern</p>
+          <pre class="text-xs leading-relaxed bg-slate-950/80 rounded-xl p-4 border border-slate-800 overflow-x-auto">
+&lt;form action="https://fabform.io/f/your-form-id" method="POST"&gt;
+  &lt;!-- Your fields here --&gt;
+  &lt;input type="text" name="name" required /&gt;
+  &lt;input type="email" name="email" required /&gt;
+  &lt;textarea name="message"&gt;&lt;/textarea&gt;
+
+  &lt;button type="submit"&gt;Send&lt;/button&gt;
+&lt;/form&gt;
+          </pre>
+          <p class="mt-4 text-xs text-slate-300">
+            This snippet can be dropped into Astro, Hugo, Jekyll, Eleventy, or plain HTML. The static site builder
+            doesn’t need to know anything about databases, queues, or notification systems. All of that lives in
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section: FabForm.io as a Platform -->
+  <section class="border-t border-white/5 bg-gradient-to-b from-slate-950 to-slate-900 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+          FabForm.io:
+          <span class="text-cyan-300">More Than Just an Endpoint</span>
+        </h2>
+        <p class="mt-4 text-sm text-slate-300/80">
+          At first glance, a form backend might look like “just a URL” you post to. But the value of a platform
+          like FabForm.io is in everything that happens after the form is submitted.
+        </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-8 text-sm md:text-base text-slate-200/90 leading-relaxed">
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Unified dashboard</h3>
+          <p>
+            Instead of hunting through inboxes or logs, you get a central place to review all submissions from all
+            your static sites. You can filter, search, tag, and export data as needed.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Integrations</h3>
+          <p>
+            FabForm.io can forward submissions to email, Slack, Telegram, CRMs, spreadsheets, and automation tools.
+            Your static form becomes the starting point for rich workflows.
+          </p>
+        </div>
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-lg font-semibold text-slate-50 mb-2">Evolving capabilities</h3>
+          <p>
+            As FabForm.io adds features — better spam detection, new integrations, improved analytics — your existing
+            forms benefit automatically. You don’t need to redeploy your static sites to take advantage of these upgrades.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10 text-sm md:text-base text-slate-200/90 leading-relaxed max-w-4xl">
+        <p>
+          This separation of concerns is healthy. Your static site builder focuses on rendering fast, accessible pages.
+          Your form backend focuses on receiving, storing, and routing submissions. Together, they form a system that
+          is both simple to reason about and powerful in practice.
+        </p>
+        <p class="mt-4">
+          For developers, this means less time reinventing the wheel and more time focusing on the parts of the product
+          that are unique. For teams, it means fewer surprises: forms behave consistently across projects, and the
+          operational surface area is smaller and easier to manage.
+        </p>
+        <p class="mt-4">
+          If you’re building static sites, Astro projects, or JAMStack applications and you want a reliable way to
+          handle forms, it’s worth exploring
+          <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+          as a foundational piece of your stack.
+        </p>
+      </div>
+
+      <div class="mt-10">
+        <a href="https://fabform.io" class="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/40 hover:bg-cyan-300 transition">
+          Visit FabForm.io
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
+  <section id="faq" class="border-t border-white/5 bg-slate-950 py-16 md:py-20">
+    <div class="max-w-6xl mx-auto px-6">
+      <div class="max-w-3xl">
+        <h2 class="text-2xl md:text-3xl font-bold text-slate-50">
+          Frequently Asked Questions About Static Sites & Form Backends
+        </h2>
+        <p class="mt-4 text-sm text-slate-300/80">
+          A few common questions that come up when teams start combining static site builders with a dedicated form backend.
+        </p>
+      </div>
+
+      <div class="mt-10 space-y-6 text-sm md:text-base text-slate-200/90 leading-relaxed">
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-base md:text-lg font-semibold text-slate-50 mb-2">
+            Do I lose the benefits of a static site by using a form backend?
+          </h3>
+          <p>
+            No. Your site remains static: it’s still just HTML, CSS, and JavaScript served from a CDN or static host.
+            The form backend lives elsewhere and only receives POST requests when someone submits a form. You keep the
+            performance, security, and simplicity of a static deployment while gaining the ability to handle dynamic
+            user input.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-base md:text-lg font-semibold text-slate-50 mb-2">
+            Why not just build my own serverless function for forms?
+          </h3>
+          <p>
+            You can, and many developers do at first. But over time, maintaining custom endpoints, dealing with spam,
+            adding notifications, and integrating with other tools becomes a recurring burden. A platform like
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            centralises this work so you don’t have to rebuild the same infrastructure for every project.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-base md:text-lg font-semibold text-slate-50 mb-2">
+            Is this only for contact forms?
+          </h3>
+          <p>
+            Not at all. You can use a form backend for waitlists, beta signups, surveys, feedback widgets, event
+            registrations, internal tools, and more. Anywhere you need to collect structured data from users, a
+            dedicated backend can help.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-base md:text-lg font-semibold text-slate-50 mb-2">
+            Does using FabForm.io lock me into a specific frontend framework?
+          </h3>
+          <p>
+            No. One of the advantages of
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            is that it’s framework‑agnostic. You can use it with Astro, Next.js, Hugo, Jekyll, Eleventy, plain HTML,
+            or any other tool that can submit an HTML form. If you change frameworks later, you can keep the same
+            endpoints and workflows.
+          </p>
+        </div>
+
+        <div class="rounded-2xl border border-white/10 bg-slate-900/70 p-5">
+          <h3 class="text-base md:text-lg font-semibold text-slate-50 mb-2">
+            How do Telegram notifications fit into a professional workflow?
+          </h3>
+          <p>
+            Telegram notifications are especially useful for teams that need to respond quickly to new submissions.
+            Founders, sales teams, and support staff can receive alerts on their phones or desktops and act immediately.
+            Meanwhile, the full submission history remains available in the
+            <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>
+            dashboard for reporting and analysis.
+          </p>
+        </div>
+      </div>
+
+      <div class="mt-10">
+        <a href="https://fabform.io" class="inline-flex items-center justify-center rounded-full bg-cyan-400 px-6 py-3 text-sm font-semibold text-slate-950 shadow-lg shadow-cyan-400/40 hover:bg-cyan-300 transition">
+          Learn more at FabForm.io
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-white/10 bg-slate-950 py-10">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4">
+      <p class="text-xs text-slate-400 text-center md:text-left">
+        This page exists to support and promote
+        <a href="https://fabform.io" class="text-cyan-300 hover:text-cyan-200 underline underline-offset-2">FabForm.io</a>.
+        All SEO authority is intentionally directed to FabForm.io.
+      </p>
+      <a href="https://fabform.io" class="inline-flex items-center gap-2 rounded-full border border-slate-600 px-4 py-2 text-xs font-semibold text-slate-100 hover:border-cyan-400 hover:text-cyan-200 transition">
+        Visit FabForm.io
+        <span class="text-[10px]">↗</span>
+      </a>
+    </div>
+  </footer>
+
+</body>
+</html>
+
